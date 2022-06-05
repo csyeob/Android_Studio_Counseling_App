@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParentResultActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_push"
+        android:layout_width="346dp"
+        android:layout_height="33dp"
+        android:background="@drawable/result_button_b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview_total"
+        android:layout_width="165dp"
+        android:layout_height="129dp"
+        android:background="@drawable/total_score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview_circle"
+        android:layout_width="159dp"
+        android:layout_height="124dp"
+        android:background="@drawable/circle_score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/school_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gulim210"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <TextView
+        android:id="@+id/total_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gulim210"
+        android:text="80점"
+        android:textColor="#ffff0000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/friend_score"
+        android:layout_width="51dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/gulim210"
+        android:text="20"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <TextView
+        android:id="@+id/family_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gulim210"
+        android:text="20"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="426dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_margin="13dp"
+            android:background="@drawable/chart">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/family1"
+                android:layout_width="190dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_box" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/family2"
+                android:layout_width="190dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_red_box" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/friend1"
+                android:layout_width="190dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_box" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/friend2"
+                android:layout_width="190dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_blue_box" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/schoool1"
+                android:layout_width="190dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_box"
+                 />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/school2"
+                android:layout_width="190dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_yellow_box" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/chart_text"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/result_chart_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/gulim210"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/result_tx"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/result_textView"
+                    android:fontFamily="@font/gulim210"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
