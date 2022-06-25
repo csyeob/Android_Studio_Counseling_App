@@ -65,8 +65,6 @@ public class LoginActivity extends AppCompatActivity {
         login_pwd = (EditText) findViewById(R.id.editText_password);
         login_btn = (Button) findViewById(R.id.login_btn);
         register_btn = (Button) findViewById(R.id.assign_btn);
-
-
         register_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,35 +80,43 @@ public class LoginActivity extends AppCompatActivity {
                 check_info_pwd = "";
                 check_info = login_id.getText().toString();
                 check_info_pwd = login_pwd.getText().toString();
-                // 0 전번 , 1 이름,  2 생일, 3 id, 4 자녀 부모, 5 pwd
 
+                // 0 전번 , 1 이름,  2 생일, 3 id, 4 자녀 부모, 5 pwd
                 for(int i =0; i<dataBase_user_info.Array_id.length; i++){
-                    if(dataBase_user_info.Array_id[i].contains("id="+check_info+",") && dataBase_user_info.Array_id[i+2].contains("pwd="+check_info_pwd+"},")
+                    if(dataBase_user_info.Array_id[i].contains("id="+check_info+",") && dataBase_user_info.Array_id[i+2].contains("pwd="+check_info_pwd+"}")
                     && dataBase_user_info.Array_id[i+1].contains("자녀")){
                         a++;
                     }
-                    if(dataBase_user_info.Array_id[i].contains(check_info) && dataBase_user_info.Array_id[i+2].contains(check_info_pwd)
+                    if(dataBase_user_info.Array_id[i].contains("id="+check_info+",") && dataBase_user_info.Array_id[i+2].contains("pwd="+check_info_pwd+"}")
                             && dataBase_user_info.Array_id[i+1].contains("부모")){
                         b++;
                     }
                 }
                 if(a > 2){
+                        String msg = "로그인 성공";
+                      Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(LoginActivity.this, NoticeActivity.class);
                         intent.putExtra("ID", check_info);
                         startActivity(intent);
                 }
                 else {
+                    if(b == 2){
                     String msg = "아이디, 비밀번호를 정확히 적어주세요.";
                     Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+                    }
                 }
                 if(b > 2){
-
+                    String msg = "로그인 성공";
+                    Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                     Intent intent2 = new Intent(LoginActivity.this, ParentActivity.class);
                     intent2.putExtra("P_ID", check_info);
                     startActivity(intent2);
                 }
                 else{
-                    //tx.setText("실패 시발");
+                    if(a==2) {
+                        String msg = "아이디, 비밀번호를 정확히 적어주세요.";
+                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });

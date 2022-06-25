@@ -39,7 +39,6 @@ public class AnswerActivity extends AppCompatActivity {
         for(int i = 0; i<question_answer.Question.length; i++){
             itemArrayList.add(new item(question_answer.Question[i], question_answer.Answer[i], question_answer.Result_Score[i]));
         }
-
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recyclerview);
         mRecyclerView.setHasFixedSize(true);//옵션
         //Linear layout manager 사용

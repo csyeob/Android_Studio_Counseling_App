@@ -33,7 +33,6 @@ public class RegisterActivity extends AppCompatActivity {
     Button child_btn;
     Button overlap_btn;
 
-    TextView tx;
     private int p = 0;
     DataBase_User_Info dataBase_user_info;
 
@@ -60,7 +59,6 @@ public class RegisterActivity extends AppCompatActivity {
         child_btn = (Button) findViewById(R.id.child_btn);
         overlap_btn = (Button) findViewById(R.id.overlap_btn);
 
-        tx = (TextView) findViewById(R.id.textView);
 
         dataBase_user_info = new DataBase_User_Info();
         dataBase_user_info.start_db();

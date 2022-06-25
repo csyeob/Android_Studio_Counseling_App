@@ -4,26 +4,34 @@
     package="com.cookandroid.mp2">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
     <application
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/main_icon"
-        android:label="@string/app_name"
+        android:label="수뭉이의 상담소"
         android:roundIcon="@mipmap/main_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mp2"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".ChildResultActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/FullScreenTheme"/>
         <activity
             android:name=".NoticeActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/FullScreenTheme"/>
         <activity
             android:name=".ParentResultActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/FullScreenTheme"/>
         <activity
             android:name=".RegisterActivity"
