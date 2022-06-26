@@ -36,7 +36,8 @@ Import the Google Natural Language Processing API key and insert the credential.
 **상담 기능** - MainActivity.java, NoticeActivity.java (sentiment analysis, tts, stt)<br>
 **상담 결과(child)** - AnswerActivtiy.java (Firebase - realtimeDB) - 자식쪽<br>
 **상담 결과(parent)** - ParentResult.java <br>
-![](https://github.com/csyeob/Android_Studio_Counseling_App/issues/1#issue-1284944755)
+![](https://user-images.githubusercontent.com/50544455/175820081-7edbaba5-b610-4383-ac46-8ced6c597d78.png)<br>
+
 **TTS 및 STT** <br>
 STT - 음성으로 질문에 대한 답변을 받아 적어준다. ⏺️<br>
 TTS - TextView 상담질문을 음성으로 들려준다. 👂<br>
