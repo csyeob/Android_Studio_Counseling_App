@@ -26,6 +26,7 @@ Import the Google Natural Language Processing API key and insert the credential.
 └─ :open_file_folder: **drawable** / :open_file_folder: **font** / :open_file_folder: **layout** / :open_file_folder: **values** / 📂 **raw** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ img.png    &nbsp;&nbsp;└ font.ttf &nbsp;&nbsp;└ layout_files(.xml)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ credential.json
 
+#### 앱 구조 및 기능 App Structure and Features
 
 
 
