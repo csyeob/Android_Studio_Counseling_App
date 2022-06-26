@@ -40,11 +40,12 @@ Import the Google Natural Language Processing API key and insert the credential.
 ![](https://user-images.githubusercontent.com/50544455/175820107-01e4857d-cec2-4c67-8c77-8228b17ddcda.png)<br>
 
 **감정분석(sentimnet analysis)**<br>
-
+Google NLP(구글 자연어처리) 감정분석 모델을 사용하여 text로 답을 작성하면 score -0.9 ~ 0.9로 반환하여 점수에 따른 감정 변화 측정<br>
+<img src="https://user-images.githubusercontent.com/50544455/175820133-18192fe1-10f3-47e6-9409-abfb21092fff.png" width="600" height="500"/><br>
 **TTS 및 STT** <br>
 STT - 음성으로 질문에 대한 답변을 받아 적어준다. ⏺️<br>
 TTS - TextView 상담질문을 음성으로 들려준다. 👂<br>
-<img src = "https://user-images.githubusercontent.com/50544455/175820150-5fc7d0f2-a7c8-4771-bc1c-e8d1a5272aa0.png" width="300" height="500"/>
+<img src = "https://user-images.githubusercontent.com/50544455/175820150-5fc7d0f2-a7c8-4771-bc1c-e8d1a5272aa0.png" width="300" height="500"/><br>
 
 **Pdf 저장하기**<br>
 상담 결과 용지를 앱을 사용하지 않아도 pdf로 받아 볼 수 있음. 📄<br>
