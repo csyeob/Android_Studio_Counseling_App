@@ -37,13 +37,14 @@ Import the Google Natural Language Processing API key and insert the credential.
 **상담 결과(child)** - AnswerActivtiy.java (Firebase - realtimeDB) - 자식쪽<br>
 **상담 결과(parent)** - ParentResult.java <br>
 ![](https://user-images.githubusercontent.com/50544455/175820081-7edbaba5-b610-4383-ac46-8ced6c597d78.png)<br>
-
+![](https://user-images.githubusercontent.com/50544455/175820107-01e4857d-cec2-4c67-8c77-8228b17ddcda.png)<br>
 **TTS 및 STT** <br>
 STT - 음성으로 질문에 대한 답변을 받아 적어준다. ⏺️<br>
 TTS - TextView 상담질문을 음성으로 들려준다. 👂<br>
+<img src = "https://user-images.githubusercontent.com/50544455/175820150-5fc7d0f2-a7c8-4771-bc1c-e8d1a5272aa0.png" width="300" height="500"/>
 
 **Pdf 저장하기**<br>
-상담 결과 용지를 앱을 사용하지 않아도 pdf로 받아 볼 수 있음. 📄
-
+상담 결과 용지를 앱을 사용하지 않아도 pdf로 받아 볼 수 있음. 📄<br>
+<img src="https://user-images.githubusercontent.com/50544455/175820177-65c0cfb7-ee1b-4396-bcbf-cf9391d8f1ce.png" width="600" height="500"/><br>
 
 
