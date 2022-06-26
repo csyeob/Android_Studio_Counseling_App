@@ -38,6 +38,9 @@ Import the Google Natural Language Processing API key and insert the credential.
 **상담 결과(parent)** - ParentResult.java <br>
 ![](https://user-images.githubusercontent.com/50544455/175820081-7edbaba5-b610-4383-ac46-8ced6c597d78.png)<br>
 ![](https://user-images.githubusercontent.com/50544455/175820107-01e4857d-cec2-4c67-8c77-8228b17ddcda.png)<br>
+
+**감정분석(sentimnet analysis)**<br>
+
 **TTS 및 STT** <br>
 STT - 음성으로 질문에 대한 답변을 받아 적어준다. ⏺️<br>
 TTS - TextView 상담질문을 음성으로 들려준다. 👂<br>
