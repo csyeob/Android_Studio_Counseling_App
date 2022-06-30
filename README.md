@@ -51,10 +51,10 @@ TTS - TextView 상담질문을 음성으로 들려준다. 👂<br>
 상담 결과 용지를 앱을 사용하지 않아도 pdf로 받아 볼 수 있음. 📄<br>
 <img src="https://user-images.githubusercontent.com/50544455/175820177-65c0cfb7-ee1b-4396-bcbf-cf9391d8f1ce.png" width="600" height="500"/><br>
 
-**Firebase**
-firebase realtimedatabase사용
-회원가입 시 데이터베이스에 Users에 user들의 정보가 저장
-로그인 시 데이터베이스에 저장된 id 및 pw가 일치한지 확인
-자식계정으로 등록한 회원의 상담결과를 Result에 user_id 하위로 질문, 질문답, score를 저장
-부모는 자식 등록을 하면 자식의 id, 핸드폰번호, 생년월일을 저장
+**Firebase**<br>
+firebase realtimedatabase사용<br>
+회원가입 시 데이터베이스에 Users에 user들의 정보가 저장 <br>
+로그인 시 데이터베이스에 저장된 id 및 pw가 일치한지 확인 <br>
+자식계정으로 등록한 회원의 상담결과를 Result에 user_id 하위로 질문, 질문답, score를 저장 <br>
+부모는 자식 등록을 하면 자식의 id, 핸드폰번호, 생년월일을 저장 <br>
 
