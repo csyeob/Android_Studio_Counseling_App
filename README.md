@@ -57,4 +57,5 @@ firebase realtimedatabase사용<br>
 로그인 시 데이터베이스에 저장된 id 및 pw가 일치한지 확인 <br>
 자식계정으로 등록한 회원의 상담결과를 Result에 user_id 하위로 질문, 질문답, score를 저장 <br>
 부모는 자식 등록을 하면 자식의 id, 핸드폰번호, 생년월일을 저장 <br>
+부모는 자식이 설문한 설문을 결과용지로 보여주기 위하여 Result의 값을 가져옴
 
